@@ -8,11 +8,12 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZmFyYWdyYXppbyIsImEiOiJjbDJnZmoyaWYwM2owM25xd
 
 const map = new mapboxgl.Map({
 container: 'map', // container ID
-style: 'mapbox://styles/faragrazio/cl3q00vxi006315ms0b69i24d/draft', // style URL
-center: [10.635846, 44.702533], // starting position
-zoom: 15, // starting zoom
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [10.636291, 44.706190], // starting position
+zoom: 16.27, // starting zoom
 //maxBounds: bounds // Set the map's geographical boundaries.
 });
+
 //aggiunge i controlli di zoom e "rotazione mappa"
 const nav = new mapboxgl.NavigationControl()
 map.addControl(nav)
@@ -27,13 +28,13 @@ map.addControl(nav)
     showUserHeading: true
     })
     );
-
+/* ROBETTINO IN ALTO A SINISTRA
 map.addControl(
     new MapboxDirections({
     accessToken:'pk.eyJ1IjoiZmFyYWdyYXppbyIsImEiOiJjbDJnZmoyaWYwM2owM25xd2FxYWZzdTBtIn0.JDafX9t6_ZbxhR39L169-Q'
     }),
     'top-left'
-    );
+    );*/
 const geojson = {
   type: 'FeatureCollection',
   features: [
@@ -41,22 +42,11 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [10.631003367214195,44.69885585089053]
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'Washington, D.C.'
-      }
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
         coordinates: [10.6342104,44.7045491]
       },
       properties: {
-        title: 'Mapbox',
-        description: 'San Francisco, California'
+        title: 'Parcheggio Gratis',
+        description: ''
       }
     }
   ]
