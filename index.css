@@ -6,15 +6,15 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  right:0;
-  width: 90%;
+  z-index: -1;
+  width: 100%;
 }
 .marker {
-  background-image: url('./img/mapbox-icon.png');
+  background-image: url('./img/parcheggio.png');
   background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
   cursor: pointer;
 }
 .mapboxgl-popup {

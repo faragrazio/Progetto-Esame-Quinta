@@ -42,7 +42,18 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [10.6342104,44.7045491]
+        coordinates: [10.634097665295954, 44.704801517573586]
+      },
+      properties: {
+        title: 'Parcheggio Gratis',
+        description: ''
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [10.635953225277376, 44.707514196660654]
       },
       properties: {
         title: 'Parcheggio Gratis',
