@@ -12,7 +12,7 @@ center: [10.636291, 44.706190], // starting position
 zoom: 16.35, // starting zoom
 //maxBounds: bounds // Set the map's geographical boundaries.
 });
-
+map.addControl(new mapboxgl.FullscreenControl());
 
 const geolocate=new mapboxgl.GeolocateControl({
     positionOptions: {
