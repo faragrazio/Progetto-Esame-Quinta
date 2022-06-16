@@ -1,4 +1,6 @@
 body {
+  width:0px;
+  height:0px;
   margin: 0;
   padding: 0;
 }
@@ -9,13 +11,42 @@ body {
   z-index: -1;
   width: 100%;
 }
-.marker {
+.Markerparcheggio {
   background-image: url('./img/parcheggio.png');
   background-size: cover;
   width: 20px;
   height: 20px;
-  border-radius: 20%;
+  border-radius: 10%;
   cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+.Markerscuole {
+  background-image: url('./img/scuola.png');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+.Markerchioschi {
+  background-image: url('./img/risto.png');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+.Markerbar {
+  background-image: url('./img/bar.png');
+  background-size: cover;
+  width: 25px;
+  height: 27px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
 }
 .mapboxgl-popup {
   max-width: 200px;
@@ -77,9 +108,12 @@ body {
 } */
 
 #menu_icon{
-  width:90px;
-  height: 110px;
-  margin-left: 45px;
-  margin-top: 30px;
+  width:93px;
+  height: 115px;
+  margin-left: 62px;
+  margin-top: 45px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
 }
 /* FINE MENU */
