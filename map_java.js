@@ -4,16 +4,14 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhdWRpb2VzY3UiLCJhIjoiY2w0Y3B6aTZoMDB5MTNrc
   44.701836758921516, // Southwest coordinates
   44.71010254575342, // Northeast coordinates
 ];*/
-
 const map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/claudioescu/cl4cq6dj0000k15pfpkglp6ar/draft', // style URL
 center: [10.636291, 44.706190], // starting position
 zoom: 16.35, // starting zoom
 //maxBounds: bounds // Set the map's geographical boundaries.
-});
+})
 map.addControl(new mapboxgl.FullscreenControl());
-
 const geolocate=new mapboxgl.GeolocateControl({
     positionOptions: {
     enableHighAccuracy: true
@@ -44,6 +42,7 @@ geolocate.on('geolocate', (position) => {
 console.log(position);
 ciao.setOrigin([position.coords.longitude,position.coords.latitude])
 });
+
 //PARCHEGGI
 const parcheggi = {
   type: 'FeatureCollection',
@@ -92,7 +91,6 @@ const parcheggi = {
         description: ''
       }
     },
-    
   ]
 };
 // add markers to map
@@ -274,17 +272,6 @@ const bar = {
         description: ''
       }
     },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [10.638847830571471, 44.70628672197153]
-      },
-      properties: {
-        title: 'Bar Delelife',
-        description: ''
-      }
-    }
   ]
 };
 // add markers to map
